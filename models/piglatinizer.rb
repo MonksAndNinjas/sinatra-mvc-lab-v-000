@@ -13,7 +13,6 @@ class PigLatinizer
       pigword = word.slice!(0,2)
       word << "#{pigword}ay"
 
-    elsif 
     end
 
   end
