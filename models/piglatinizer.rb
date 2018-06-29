@@ -2,7 +2,7 @@ class PigLatinizer
 
   def piglatinize(word)
     #checks to see if second letter is a vowel
-    if word[0] == ["a","e","i","o","u"] and word.size == 1
+    if word.size == 1 and word[0].scan(/[aeiouAEIOU]/).size != 0
       word << "way"
 
     else
