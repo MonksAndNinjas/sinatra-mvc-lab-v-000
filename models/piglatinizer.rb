@@ -9,7 +9,7 @@ class PigLatinizer
 
     else
       pigword = word.slice!(0,key)
-      word << "#{pigword}ay"
+      word << "#{pigword}#{w if key == 0}ay"
     end
 
   end
