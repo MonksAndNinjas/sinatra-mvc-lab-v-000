@@ -1,6 +1,8 @@
 class PigLatinizer
 
   def piglatinize(word)
+  key = word.index("#{word.scan(/[aeiouAEIOU]/).first}")
+    
     #checks to see if second letter is a vowel
     if !word[0].scan(/[aeiouAEIOU]/).empty?
       word << "way"
@@ -13,6 +15,8 @@ class PigLatinizer
       pigword = word.slice!(0,2)
       word << "#{pigword}ay"
 
+    elsif word.index("#{word.scan(/[aeiouAEIOU]/).first}") != 0
+      
     end
 
   end
