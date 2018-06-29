@@ -4,7 +4,7 @@ class PigLatinizer
   key = word.index("#{word.scan(/[aeiouAEIOU]/).first}")
 
     #checks to see if second letter is a vowel
-    if key == 0 
+    if key == 0
       word << "#{pigword}way"
 
     else
