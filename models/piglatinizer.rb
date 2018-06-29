@@ -5,7 +5,8 @@ class PigLatinizer
 
     #checks to see if second letter is a vowel
     if key == 0
-      word << "way"
+      pigword = word.slice!(0,0)
+      word << "#{pigword}way"
 
     elsif key == 1
       pigword = word.slice!(0,1)
