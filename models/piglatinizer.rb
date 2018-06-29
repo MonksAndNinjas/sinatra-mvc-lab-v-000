@@ -7,11 +7,11 @@ class PigLatinizer
     if key == 0
       word << "way"
 
-    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? and !word[1].scan(/[aeiouAEIOU]/).empty?
+    elsif key == 1
       pigword = word.slice!(0)
       word << "#{pigword}ay"
 
-    elsif word[0,2].scan(/[bcdfghjklmnpqrstvwxyz]/).size == 2
+    elsif key == 2
       pigword = word.slice!(0,2)
       word << "#{pigword}ay"
 
