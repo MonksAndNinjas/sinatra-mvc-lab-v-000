@@ -1,12 +1,12 @@
 class PigLatinizer
   attr_accessor :words
 
-  def initialize(word)
+  def initialize(:words)
     @words = word
   end
 
   def piglatinize
-    pigword = @word.slice!(0)
-    @word << "#{pigword}ay"
+    pigword = @words.slice!(0)
+    @words << "#{pigword}ay"
   end
 end
