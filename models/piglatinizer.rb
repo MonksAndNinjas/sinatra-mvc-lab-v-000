@@ -7,6 +7,6 @@ class PigLatinizer
 
   def piglatinize
     pigword = @word.slice!(0)
-    @word << pigword
+    @word << "#{pigword}ay"
   end
 end
