@@ -1,8 +1,8 @@
 class PigLatinizer
-  attr_accessor :words
+  attr_accessor :word
 
   def initialize(word)
-    @words = word
+    @word = word
   end
 
   #def piglatinize
