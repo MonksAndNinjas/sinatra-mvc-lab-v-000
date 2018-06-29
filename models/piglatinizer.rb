@@ -15,6 +15,9 @@ class PigLatinizer
       pigword = word.slice!(0,2)
       word << "#{pigword}ay"
 
+    elsif key == 3
+      pigwor = word.slice!(0,3)
+      word << "#{pigword}ay"
     end
 
   end
