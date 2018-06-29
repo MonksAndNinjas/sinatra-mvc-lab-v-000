@@ -1,6 +1,7 @@
 class PigLatinizer
 
   def piglatinize(word)
+    #finds the first vowel to set at the slicing point
     key = word.index("#{word.scan(/[aeiouAEIOU]/).first}")
 
     pigword = word.slice!(0,key)
