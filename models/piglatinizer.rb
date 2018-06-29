@@ -4,7 +4,7 @@ class PigLatinizer
     if !word[1].scan(/[aeoui]/).empty?
       pigword = word.slice!(0)
       word << "#{pigword}ay"
-    end
+    elsif word[1].scan(/[bcdfghjklmnpqrstvwxyz]/) 
   end
 
 end
