@@ -1,6 +1,7 @@
 class PigLatinizer
 
   def piglatinize(sentence)
+    #splits sentence into an array of words
     words = sentence.split(" ")
     #finds the first vowel to set at the slicing point
     key = word.index("#{word.scan(/[aeiouAEIOU]/).first}")
