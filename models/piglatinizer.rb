@@ -8,7 +8,7 @@ class PigLatinizer
       word << "way"
 
     elsif key == 1
-      pigword = word.slice!(0)
+      pigword = word.slice!(0,1)
       word << "#{pigword}ay"
 
     elsif key == 2
