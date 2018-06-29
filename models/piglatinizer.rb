@@ -10,9 +10,10 @@ class PigLatinizer
       word << "#{pigword}ay"
 
     elsif word[0,2].scan(/[bcdfghjklmnpqrstvwxyz]/).size == 2
-
+      pigword = word.slice!(0,2)
+      word << "#{pigword}ay"
     end
-    
+
   end
 
 end
