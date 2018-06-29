@@ -4,10 +4,11 @@ class PigLatinizer
     #checks to see if second letter is a vowel
     if word[0] == ["a","e","i","o","u"] and word.size == 1
       word << "way"
-      
+
     else
       pigword = word.slice!(0)
       word << "#{pigword}ay"
+    end
   end
 
 end
