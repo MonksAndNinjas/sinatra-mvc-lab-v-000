@@ -10,7 +10,7 @@ class PigLatinizer
       #slices and then appends the consonants before the first vowel
       pigword = word.slice!(0,key)
       word << "#{pigword}#{"w" if key == 0}ay"
-    end
+    end.join(" ")
 
   end
 
