@@ -8,7 +8,8 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-
+    @piglatinized = params
+    
     erb :piglatinize
   end
 
