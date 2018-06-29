@@ -8,7 +8,11 @@ class PigLatinizer
     elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? and !word[1].scan(/[aeiouAEIOU]/).empty?
       pigword = word.slice!(0)
       word << "#{pigword}ay"
+
+    elsif word[0,2].scan(/[bcdfghjklmnpqrstvwxyz]/).size == 2
+
     end
+    
   end
 
 end
